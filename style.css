@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding:0;
+    font-family: 'Open Sans', sans-serif;
+}
+body{
+    background-color:hsl(257, 40%, 49%);
+    background-image: url(bg-mobile.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+main{
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+#logo{
+    height: 30px;
+    width: 130px;
+    background-image: url(logo.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin: 35px 0px 0px 35px;
+}
+#content{
+    margin: 60px 40px;
+    width:295px;
+    display:flex; 
+    flex-direction: column;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;   
+    text-align: center;
+}
+#mainimage{
+    background-image: url(illustration-mockups.svg);
+    width: 100%;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+#heading{
+    margin:0px;
+    
+}
+#para{
+    margin-top:22px;
+    font-size: 17px;
+    line-height: 1.5;
+}
+#register{
+    margin:25px;
+}
+button{
+    height:38px;
+    width:190px;
+    border-radius: 20px;
+}
+.fa-brands{
+    margin-left:15px;
+    font-size: 26px;
+    margin-top:40px;
+    
+}
+button:hover{
+    background-color: hsl(300, 69%, 71%);
+    color:#ffffff;
+}
+.fa-brands:hover{
+    background-color: hsl(300, 69%, 71%);
+    color:#ffffff;
+}
+
+
+@media(min-width:728px){
+    body{
+        background-image: url(bg-desktop.svg);
+        background-size: 90%;
+    }
+    #logo{
+        width:150px;
+        height:50px;
+    }
+    #content{
+        flex-direction: row;
+        margin: 40px 40px;
+        
+        width:1600px;
+    }
+    #heading{
+        margin-top: 0;
+    }
+    #mainimage{
+        height:450px;
+        width:none;
+        max-width:600px
+    }
+    #midarea{
+        text-align:left;
+        width:370px;
+        margin-left:40px;
+        height:450px;
+        padding-top:70px;
+        
+    }
+    h2{
+        font-size: 32px;
+    }
+    #midarea{
+    justify-content: flex-start;
+    align-items: center;   
+    text-align: left;
+    }
+    #register{
+        margin: 25px 0px;
+    }
+    #icons{
+        text-align: end;
+        margin-top:90px;
+    }
+    
+}
